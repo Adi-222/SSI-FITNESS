@@ -68,7 +68,7 @@ export default function Testimonials() {
 
         <div className="mt-20 relative">
           {/* Quote card */}
-          <div className="relative bg-[#0A0A0A]/80 backdrop-blur-3xl rounded-3xl p-8 md:p-16 min-h-[350px] flex items-center border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.8)] overflow-hidden group">
+          <div className="relative bg-[#0A0A0A]/80 backdrop-blur-lg md:backdrop-blur-3xl rounded-3xl p-8 md:p-16 min-h-[350px] flex items-center border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.8)] md:shadow-[0_40px_80px_rgba(0,0,0,0.8)] overflow-hidden group">
             
             {/* Subtle inner hover gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/0 via-transparent to-brand-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />

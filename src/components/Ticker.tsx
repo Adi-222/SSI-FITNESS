@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const SLOGANS = [
   "SWEAT NOW, SHINE LATER",
@@ -15,12 +15,9 @@ const SLOGANS = [
 const REPEATED_SLOGANS = [...SLOGANS, ...SLOGANS, ...SLOGANS, ...SLOGANS];
 
 export default function Ticker() {
-  const { scrollYProgress } = useScroll();
-  const xScrollShift = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-
   return (
     <div className="relative py-4 md:py-6 bg-black overflow-hidden border-y border-brand-orange/20 shadow-[0_0_30px_rgba(0,0,0,0.5)] z-20">
-      <motion.div style={{ x: xScrollShift }} className="flex whitespace-nowrap">
+      <div className="flex whitespace-nowrap will-change-transform">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
@@ -38,7 +35,7 @@ export default function Ticker() {
             </div>
           ))}
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 }

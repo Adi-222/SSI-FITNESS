@@ -21,6 +21,7 @@ export default function About() {
                   src="/images/strength.png"
                   alt="SSI Fitness founder training"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover scale-105 hover:scale-110 transition-transform duration-1000 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-dark/80 via-transparent to-transparent" />
@@ -42,7 +43,7 @@ export default function About() {
           {/* Content Side - Overlapping Glass Card */}
           <div className="w-full lg:w-6/12 mt-[-15%] sm:mt-[-10%] lg:mt-0 lg:-ml-[8%] relative z-10">
             <ScrollReveal direction="up" delay={0.2}>
-              <div className="bg-[#0A0A0A]/70 backdrop-blur-2xl p-8 sm:p-12 lg:p-16 rounded-3xl border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] relative overflow-hidden">
+              <div className="bg-[#0A0A0A]/80 md:bg-[#0A0A0A]/70 backdrop-blur-md md:backdrop-blur-2xl p-8 sm:p-12 lg:p-16 rounded-3xl border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.6)] relative overflow-hidden">
                 {/* Subtle Inner Glow */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/20 blur-[60px]" />
                 

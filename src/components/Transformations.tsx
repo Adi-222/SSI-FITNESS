@@ -27,7 +27,7 @@ export default function Transformations() {
         <div className="mt-20 grid md:grid-cols-3 gap-8 lg:gap-10">
           {TRANSFORMATIONS.map((transform, i) => (
             <ScrollReveal key={transform.id} delay={i * 0.15}>
-              <div className="rounded-3xl bg-[#0A0A0A]/80 backdrop-blur-2xl border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.6)] overflow-hidden group h-full hover:border-brand-orange/40 hover:shadow-[0_30px_60px_rgba(255,107,0,0.15)] transition-all duration-500 hover:-translate-y-2">
+              <div className="rounded-3xl bg-[#0A0A0A]/80 backdrop-blur-md md:backdrop-blur-2xl border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.6)] overflow-hidden group h-full hover:border-brand-orange/40 hover:shadow-[0_30px_60px_rgba(255,107,0,0.15)] transition-all duration-500 hover:-translate-y-2">
                 {/* Before/After placeholder area */}
                 <div className="relative aspect-[4/3] bg-black overflow-hidden border-b border-white/5">
                   {/* Hover background glow */}

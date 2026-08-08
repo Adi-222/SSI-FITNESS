@@ -35,8 +35,8 @@ export default function Pricing() {
               <div
                 className={`relative rounded-3xl p-8 lg:p-10 transition-all duration-500 hover:scale-[1.02] ${
                   plan.popular
-                    ? "bg-[#0A0A0A]/90 backdrop-blur-3xl border border-brand-orange/50 shadow-[0_30px_60px_rgba(255,107,0,0.2)] md:-mt-8 md:mb-8 md:py-16 z-20"
-                    : "bg-[#111111]/80 backdrop-blur-xl border border-white/10 shadow-2xl z-10"
+                    ? "bg-[#0A0A0A]/90 backdrop-blur-lg md:backdrop-blur-3xl border border-brand-orange/50 shadow-[0_15px_30px_rgba(255,107,0,0.2)] md:shadow-[0_30px_60px_rgba(255,107,0,0.2)] md:-mt-8 md:mb-8 md:py-16 z-20"
+                    : "bg-[#111111]/80 backdrop-blur-md md:backdrop-blur-xl border border-white/10 shadow-xl md:shadow-2xl z-10"
                 }`}
               >
                 {/* Rotating glow effect for popular plan */}

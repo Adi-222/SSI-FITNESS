@@ -112,7 +112,7 @@ export default function BookCallCTA() {
               
               <form
                 onSubmit={handleSubmit}
-                className="bg-[#0A0A0A]/90 backdrop-blur-2xl rounded-3xl p-8 md:p-12 border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.5)] space-y-6 relative overflow-hidden"
+                className="bg-[#0A0A0A]/90 backdrop-blur-lg md:backdrop-blur-2xl rounded-3xl p-8 md:p-12 border border-white/10 shadow-[0_15px_30px_rgba(0,0,0,0.5)] md:shadow-[0_30px_60px_rgba(0,0,0,0.5)] space-y-6 relative overflow-hidden"
               >
                 {/* Glowing edge on top */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-brand-orange to-transparent" />

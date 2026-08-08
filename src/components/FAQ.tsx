@@ -66,7 +66,7 @@ export default function FAQ() {
 
   return (
     <section className="relative py-24 md:py-32 bg-brand-dark overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-orange/5 rounded-full blur-[150px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-orange/5 rounded-full blur-[150px] hidden md:block" />
 
       {/* Massive Background Text Watermark */}
       <div className="absolute top-1/2 left-0 w-full flex justify-center z-0 pointer-events-none select-none opacity-[0.15] overflow-hidden -translate-y-1/2">

@@ -12,7 +12,7 @@ export default function Trainers() {
       id="trainers"
       className="relative py-24 md:py-32 bg-brand-dark overflow-hidden"
     >
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-brand-orange/5 rounded-full blur-[150px]" />
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-brand-orange/5 rounded-full blur-[150px] hidden md:block" />
       
       {/* Massive Background Text Watermark */}
       <div className="absolute top-1/3 left-0 w-full flex justify-center z-0 pointer-events-none select-none opacity-[0.12] overflow-hidden">
@@ -38,6 +38,7 @@ export default function Trainers() {
                     src={trainer.image}
                     alt={trainer.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                   />
                   

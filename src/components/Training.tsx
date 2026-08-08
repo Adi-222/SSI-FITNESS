@@ -50,6 +50,7 @@ export default function Training() {
                         src={trainingImages[program.id]}
                         alt={`${program.title} training at SSI Fitness`}
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent" />
@@ -60,7 +61,7 @@ export default function Training() {
 
                   {/* Content Side (Overlapping Glass Card) */}
                   <div className={`w-full lg:w-6/12 mt-[-10%] sm:mt-[-5%] lg:mt-0 ${isEven ? 'lg:-ml-[10%]' : 'lg:-mr-[10%]'} relative z-10`}>
-                    <div className="bg-[#0A0A0A]/80 backdrop-blur-2xl p-8 sm:p-12 lg:p-14 rounded-3xl border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.7)] relative overflow-hidden group-hover:border-brand-orange/30 transition-colors duration-500">
+                    <div className="bg-[#0A0A0A]/80 backdrop-blur-md md:backdrop-blur-2xl p-8 sm:p-12 lg:p-14 rounded-3xl border border-white/10 shadow-[0_30px_60px_rgba(0,0,0,0.7)] relative overflow-hidden group-hover:border-brand-orange/30 transition-colors duration-500">
                       
                       {/* Subtle Inner Glow */}
                       <div className={`absolute top-0 ${isEven ? 'right-0' : 'left-0'} w-32 h-32 bg-brand-orange/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
