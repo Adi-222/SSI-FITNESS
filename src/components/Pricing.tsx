@@ -10,7 +10,7 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative py-24 md:py-32 bg-brand-surface/50"
+      className="relative py-24 md:py-32 bg-brand-surface/50 overflow-hidden"
     >
       {/* Background accents */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-brand-orange/5 rounded-full blur-[150px]" />

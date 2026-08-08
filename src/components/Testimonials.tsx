@@ -46,7 +46,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-24 md:py-32">
+    <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] bg-brand-orange/5 rounded-full blur-[150px]" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

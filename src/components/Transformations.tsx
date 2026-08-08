@@ -7,7 +7,7 @@ import { TrendingUp, Timer, Trophy } from "lucide-react";
 
 export default function Transformations() {
   return (
-    <section id="transformations" className="relative py-24 md:py-32">
+    <section id="transformations" className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-orange/5 rounded-full blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

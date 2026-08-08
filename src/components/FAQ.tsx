@@ -68,7 +68,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="relative py-24 md:py-32 bg-brand-surface/50">
+    <section className="relative py-24 md:py-32 bg-brand-surface/50 overflow-hidden">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Frequently Asked Questions"

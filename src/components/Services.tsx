@@ -26,7 +26,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative py-24 md:py-32 bg-brand-surface/50"
+      className="relative py-24 md:py-32 bg-brand-surface/50 overflow-hidden"
     >
       {/* Background accents */}
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-orange/5 rounded-full blur-[100px]" />

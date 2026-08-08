@@ -15,7 +15,7 @@ const trainingImages: Record<string, string> = {
 
 export default function Training() {
   return (
-    <section id="training" className="relative py-24 md:py-32">
+    <section id="training" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/3 right-0 w-80 h-80 bg-brand-orange/5 rounded-full blur-[120px]" />
 
