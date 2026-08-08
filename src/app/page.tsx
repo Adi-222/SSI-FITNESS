@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Ticker from "@/components/Ticker";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Training from "@/components/Training";
@@ -14,7 +13,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Ticker />
       <About />
       <Services />
       <Training />

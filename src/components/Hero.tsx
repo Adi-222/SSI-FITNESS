@@ -5,6 +5,7 @@ import { ArrowDown, Phone, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import StatCounter from "./ui/StatCounter";
+import Ticker from "./Ticker";
 import { STATS } from "@/lib/data";
 
 export default function Hero() {
@@ -38,7 +39,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 md:pt-40 pb-24 md:pb-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -119,7 +120,9 @@ export default function Hero() {
         </motion.div>
       </div>
 
-
+      <div className="absolute bottom-0 left-0 right-0 z-30">
+        <Ticker />
+      </div>
     </section>
   );
 }
