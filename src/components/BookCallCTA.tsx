@@ -34,7 +34,7 @@ export default function BookCallCTA() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Left — Info */}
           <ScrollReveal direction="left">
             <div>
@@ -101,7 +101,7 @@ export default function BookCallCTA() {
           <ScrollReveal direction="right">
             <form
               onSubmit={handleSubmit}
-              className="glass rounded-2xl p-8 md:p-10 space-y-6"
+              className="glass rounded-2xl p-6 md:p-10 space-y-6"
             >
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>

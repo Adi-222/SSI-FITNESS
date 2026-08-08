@@ -26,7 +26,7 @@ export default function Pricing() {
           {PRICING_PLANS.map((plan, i) => (
             <ScrollReveal key={plan.id} delay={i * 0.15}>
               <div
-                className={`relative rounded-2xl p-8 h-full ${
+                className={`relative rounded-2xl p-6 md:p-8 h-full ${
                   plan.popular
                     ? "bg-gradient-to-b from-brand-card to-brand-dark border-2 border-brand-orange/50 shadow-[0_0_40px_rgba(255,107,0,0.15)]"
                     : "bg-brand-card border border-brand-border"

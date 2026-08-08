@@ -32,7 +32,7 @@ export default function SectionHeading({
   return (
     <ScrollReveal className={centered ? "text-center" : ""}>
       <h2
-        className={`font-heading text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight ${
+        className={`font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight ${
           centered ? "text-center" : ""
         }`}
       >

@@ -52,7 +52,7 @@ export default function About() {
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={0.1}>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-tight leading-tight">
+              <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight leading-tight">
                 The Architect of{" "}
                 <span className="text-gradient-orange">Your Best Self</span>
               </h2>
@@ -77,7 +77,7 @@ export default function About() {
             </ScrollReveal>
 
             <ScrollReveal direction="right" delay={0.4}>
-              <div className="mt-8 grid grid-cols-2 gap-6">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {[
                   { label: "Training Programs", value: "15+" },
                   { label: "Recovery Services", value: "6+" },

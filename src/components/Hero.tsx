@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tight"
+          className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tight"
         >
           <span className="block text-white">Forge Your</span>
           <span className="block text-gradient-orange mt-2">Legacy</span>
@@ -107,7 +107,7 @@ export default function Hero() {
           {STATS.map((stat) => (
             <div
               key={stat.label}
-              className="relative px-4 py-6 rounded-xl glass"
+              className="relative px-3 py-4 sm:px-4 sm:py-6 rounded-xl glass"
             >
               <StatCounter
                 value={stat.value}

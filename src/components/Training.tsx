@@ -41,7 +41,7 @@ export default function Training() {
                 >
                   {/* Image */}
                   <div
-                    className={`relative aspect-[16/10] md:aspect-auto ${
+                    className={`relative aspect-[4/3] md:aspect-auto ${
                       i % 2 !== 0 ? "md:col-start-2" : ""
                     }`}
                   >
@@ -60,7 +60,7 @@ export default function Training() {
                   </div>
 
                   {/* Content */}
-                  <div className="relative p-8 md:p-12 flex flex-col justify-center">
+                  <div className="relative p-6 md:p-12 flex flex-col justify-center">
                     <div className="text-brand-orange text-sm font-medium uppercase tracking-widest mb-2">
                       {program.subtitle}
                     </div>

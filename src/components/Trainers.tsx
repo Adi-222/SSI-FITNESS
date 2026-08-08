@@ -26,7 +26,7 @@ export default function Trainers() {
             <ScrollReveal key={trainer.id} delay={i * 0.1}>
               <div className="group relative rounded-2xl bg-brand-card card-glow overflow-hidden h-full flex flex-col">
                 {/* Trainer Image */}
-                <div className="relative aspect-[3/4] bg-brand-dark overflow-hidden">
+                <div className="relative w-full aspect-[3/4] shrink-0 bg-brand-dark overflow-hidden">
                   <Image
                     src={trainer.image}
                     alt={trainer.name}

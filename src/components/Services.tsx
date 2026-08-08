@@ -44,7 +44,7 @@ export default function Services() {
             const IconComponent = iconMap[service.icon] || CircleDot;
             return (
               <ScrollReveal key={service.id} delay={i * 0.1}>
-                <div className="group relative rounded-2xl bg-brand-card p-8 card-glow h-full">
+                <div className="group relative rounded-2xl bg-brand-card p-6 md:p-8 card-glow h-full">
                   {/* Icon */}
                   <div className="w-14 h-14 rounded-xl bg-brand-orange/10 flex items-center justify-center mb-6 group-hover:bg-brand-orange/20 transition-colors duration-300">
                     <IconComponent
