@@ -23,30 +23,15 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "glass border-b border-brand-border/30 shadow-lg shadow-black/20"
-          : "bg-transparent"
-      }`}
+      className="fixed top-4 left-4 right-4 lg:left-1/2 lg:-translate-x-1/2 lg:w-full lg:max-w-5xl z-50 transition-all duration-500 rounded-full border border-white/10 bg-[#0A0A0A]/70 backdrop-blur-xl shadow-2xl shadow-black/50"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className={`flex items-center justify-between transition-all duration-500 ${scrolled ? "h-16" : "h-20"}`}>
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col items-center justify-center">
-              <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
-                Strange
-              </span>
-              <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
-                Strength
-              </span>
-              <span className="font-heading text-xl md:text-2xl font-black tracking-widest leading-none italic uppercase text-[#A6191B] mt-0.5">
-                India
-              </span>
-              <span className="text-[8px] uppercase tracking-[0.2em] text-text-muted mt-0.5">
-                Powerlifting
-              </span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <span className="font-heading text-xl md:text-2xl font-black tracking-tight text-white uppercase">
+              Strange <span className="text-brand-orange">Strength</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,12 +49,11 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center">
             <Link
               href="#contact"
-              className="btn-primary flex items-center gap-2 !py-3 !px-6 text-sm"
+              className="bg-gradient-to-r from-brand-orange to-brand-orange-dark text-white hover:from-brand-orange-light hover:to-brand-orange px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-[0_0_15px_rgba(255,107,0,0.3)] hover:shadow-[0_0_25px_rgba(255,107,0,0.5)] transform hover:-translate-y-0.5 tracking-wide uppercase"
             >
-              <Phone size={16} />
               Book a Call
             </Link>
           </div>
@@ -93,7 +77,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden glass border-t border-brand-border/30 overflow-hidden"
+            className="md:hidden absolute top-full left-0 right-0 mt-2 bg-[#0A0A0A]/90 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
           >
             <div className="px-4 py-6 space-y-1">
               {NAV_LINKS.map((link, i) => (
@@ -116,9 +100,8 @@ export default function Navbar() {
                 <Link
                   href="#contact"
                   onClick={() => setIsOpen(false)}
-                  className="btn-primary w-full flex items-center justify-center gap-2 text-sm"
+                  className="bg-gradient-to-r from-brand-orange to-brand-orange-dark text-white px-6 py-3 rounded-full font-bold text-sm tracking-wide uppercase flex items-center justify-center w-full shadow-[0_0_15px_rgba(255,107,0,0.3)]"
                 >
-                  <Phone size={16} />
                   Book a Call
                 </Link>
               </div>
