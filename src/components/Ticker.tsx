@@ -16,7 +16,7 @@ const REPEATED_SLOGANS = [...SLOGANS, ...SLOGANS, ...SLOGANS, ...SLOGANS];
 
 export default function Ticker() {
   return (
-    <div className="relative py-4 md:py-6 bg-brand-orange overflow-hidden border-y border-brand-orange-light shadow-[0_0_30px_rgba(255,107,0,0.15)] z-20">
+    <div className="relative py-4 md:py-6 bg-black overflow-hidden border-y border-brand-orange/20 shadow-[0_0_30px_rgba(0,0,0,0.5)] z-20">
       <div className="flex whitespace-nowrap">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
@@ -25,11 +25,11 @@ export default function Ticker() {
         >
           {REPEATED_SLOGANS.map((slogan, i) => (
             <div key={i} className="flex items-center gap-8 md:gap-16">
-              <span className="font-heading text-2xl md:text-3xl font-black italic tracking-widest text-brand-dark uppercase drop-shadow-md">
+              <span className="font-heading text-2xl md:text-3xl font-black italic tracking-widest text-brand-orange uppercase drop-shadow-md">
                 {slogan}
               </span>
               {/* Separator Slash */}
-              <span className="font-heading text-3xl md:text-4xl font-black text-brand-dark/30 italic">
+              <span className="font-heading text-3xl md:text-4xl font-black text-brand-orange/30 italic">
                 /
               </span>
             </div>
