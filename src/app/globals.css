@@ -129,6 +129,12 @@ body {
   background-clip: text;
 }
 
+/* Hollow Outline Text */
+.text-outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+}
+
 /* Orange glow effect */
 .glow-orange {
   box-shadow: 0 0 20px rgba(255, 107, 0, 0.3),

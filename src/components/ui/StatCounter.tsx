@@ -44,13 +44,13 @@ export default function StatCounter({
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6 }}
-      className="text-center"
+      className="text-center w-full flex flex-col items-center justify-center"
     >
-      <div className="font-heading text-4xl md:text-5xl font-bold text-brand-orange">
+      <div className="font-heading text-4xl md:text-5xl font-black text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.2)] tracking-tighter">
         {count}
-        {suffix}
+        <span className="text-brand-orange">{suffix}</span>
       </div>
-      <div className="text-text-secondary text-sm mt-1 uppercase tracking-wider">
+      <div className="text-brand-orange/80 text-xs md:text-sm mt-3 font-bold uppercase tracking-widest max-w-[150px] leading-snug">
         {label}
       </div>
     </motion.div>
