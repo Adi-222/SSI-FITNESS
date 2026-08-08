@@ -33,16 +33,20 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-orange to-brand-orange-dark flex items-center justify-center font-heading font-black text-white text-lg">
-                S
-              </div>
-              <div className="absolute inset-0 rounded-lg bg-brand-orange/30 blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="flex flex-col items-center justify-center">
+              <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
+                Strange
+              </span>
+              <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
+                Strength
+              </span>
+              <span className="font-heading text-xl md:text-2xl font-black tracking-widest leading-none italic uppercase text-[#A6191B] mt-0.5">
+                India
+              </span>
+              <span className="text-[8px] uppercase tracking-[0.2em] text-text-muted mt-0.5">
+                Powerlifting
+              </span>
             </div>
-            <span className="font-heading text-2xl font-bold tracking-wider">
-              <span className="text-brand-orange">SSI</span>{" "}
-              <span className="text-white">FITNESS</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

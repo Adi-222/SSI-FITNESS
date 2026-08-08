@@ -88,7 +88,8 @@ export default function BookCallCTA() {
                   <div>
                     <div className="text-text-muted text-sm">Location</div>
                     <div className="text-white font-medium">
-                      SSI Fitness, Main Road, City
+                      60/a Ramkrishna Pally, 60, Mahendra Banerjee Rd,<br/>
+                      Behala, Kolkata, West Bengal 700060
                     </div>
                   </div>
                 </div>

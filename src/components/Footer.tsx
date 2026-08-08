@@ -44,13 +44,20 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-orange to-brand-orange-dark flex items-center justify-center font-heading font-black text-white text-lg">
-                S
+              <div className="flex flex-col items-start justify-center">
+                <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
+                  Strange
+                </span>
+                <span className="font-heading text-lg md:text-xl font-bold tracking-tight leading-none italic uppercase text-white">
+                  Strength
+                </span>
+                <span className="font-heading text-xl md:text-2xl font-black tracking-widest leading-none italic uppercase text-[#A6191B] mt-0.5">
+                  India
+                </span>
+                <span className="text-[8px] uppercase tracking-[0.2em] text-text-muted mt-0.5">
+                  Powerlifting
+                </span>
               </div>
-              <span className="font-heading text-xl font-bold tracking-wider">
-                <span className="text-brand-orange">SSI</span>{" "}
-                <span className="text-white">FITNESS</span>
-              </span>
             </Link>
             <p className="text-text-muted text-sm leading-relaxed mt-4">
               Premium training facility offering elite fitness programs,
@@ -158,9 +165,9 @@ export default function Footer() {
                   className="text-brand-orange mt-0.5 flex-shrink-0"
                 />
                 <span className="text-text-muted text-sm">
-                  SSI Fitness, Main Road,
+                  60/a Ramkrishna Pally, 60, Mahendra Banerjee Rd,
                   <br />
-                  City, State 000000
+                  Behala, Kolkata, West Bengal 700060
                 </span>
               </div>
             </div>
@@ -168,11 +175,20 @@ export default function Footer() {
             {/* Hours */}
             <div className="mt-6 p-4 rounded-xl bg-brand-card border border-brand-border">
               <div className="text-xs text-brand-orange font-medium uppercase tracking-wider mb-2">
-                Operating Hours
+                Gym Timings
               </div>
-              <div className="text-text-muted text-sm space-y-1">
-                <div>Mon – Sat: 5:00 AM – 11:00 PM</div>
-                <div>Sunday: 6:00 AM – 8:00 PM</div>
+              <div className="text-text-muted text-sm space-y-2">
+                <div>
+                  <div className="font-medium text-white">Morning Batch</div>
+                  <div className="text-xs">Mon to Sat: 6:00 AM – 12:00 PM</div>
+                </div>
+                <div>
+                  <div className="font-medium text-white">Evening Batch</div>
+                  <div className="text-xs">Mon to Sat: 5:00 PM – 11:30 PM</div>
+                </div>
+                <div className="text-brand-orange font-medium pt-1">
+                  Sunday: CLOSED
+                </div>
               </div>
             </div>
           </div>
