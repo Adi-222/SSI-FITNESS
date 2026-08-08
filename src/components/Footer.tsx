@@ -140,7 +140,7 @@ export default function Footer() {
                   className="text-brand-orange mt-0.5 flex-shrink-0"
                 />
                 <span className="text-text-muted text-sm">
-                  +91 98765 43210
+                  +91 91635 69889
                 </span>
               </div>
               <div className="flex items-start gap-3">

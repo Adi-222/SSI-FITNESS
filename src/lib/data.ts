@@ -296,8 +296,8 @@ export const FAQ_ITEMS = [
 ];
 
 export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/ssifitness",
+  instagram: "https://www.instagram.com/strangestrengthindia/",
   facebook: "https://facebook.com/ssifitness",
   youtube: "https://youtube.com/@ssifitness",
-  whatsapp: "https://wa.me/919876543210",
+  whatsapp: "https://wa.me/919163569889",
 };

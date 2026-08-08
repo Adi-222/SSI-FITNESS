@@ -64,7 +64,7 @@ export default function BookCallCTA() {
                   <div>
                     <div className="text-text-muted text-sm">Call Us</div>
                     <div className="text-white font-medium">
-                      +91 98765 43210
+                      +91 91635 69889
                     </div>
                   </div>
                 </div>
