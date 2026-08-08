@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Phone, ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +17,15 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
   
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+  
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yOrbs = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
@@ -28,7 +37,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-start overflow-hidden bg-brand-dark"
     >
       {/* Parallax Background Image */}
-      <motion.div style={{ y: yBg }} className="absolute inset-0 z-0 h-[120%] -top-[10%] will-change-transform">
+      <motion.div style={isMobile ? {} : { y: yBg }} className="absolute inset-0 z-0 h-[120%] -top-[10%] will-change-transform">
         <Image
           src="/images/hero-bg.png"
           alt="SSI Fitness premium gym interior"
@@ -43,14 +52,14 @@ export default function Hero() {
       </motion.div>
 
       {/* Parallax Orbs (Hidden on mobile for performance) */}
-      <motion.div style={{ y: yOrbs }} className="absolute inset-0 z-0 pointer-events-none hidden md:block will-change-transform">
+      <motion.div style={isMobile ? {} : { y: yOrbs }} className="absolute inset-0 z-0 pointer-events-none hidden md:block will-change-transform">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-orange/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-brand-orange/5 rounded-full blur-[100px]" />
       </motion.div>
 
       {/* Massive Hollow Background Text */}
       <motion.div 
-        style={{ y: yText }} 
+        style={isMobile ? {} : { y: yText }} 
         className="absolute top-1/3 left-0 w-full flex justify-center z-[5] pointer-events-none select-none opacity-40 will-change-transform"
       >
         <span className="font-heading text-[12vw] sm:text-[15vw] font-black text-outline uppercase leading-none tracking-tighter whitespace-nowrap">
